@@ -1,0 +1,25 @@
+﻿<Window x:Class="Calculo_IMC.ImcWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculo_IMC"
+        mc:Ignorable="d"
+        Title="ImcWindow" Height="500" Width="450
+       ">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Txt_peso" HorizontalAlignment="Center" Margin="0,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="22" BorderBrush="#FF03050E" Grid.Column="1"/>
+        <TextBox x:Name="Txt_altura" HorizontalAlignment="Center" Margin="0,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="23" BorderBrush="#FF03060E" Grid.Column="1" KeyDown="Txt_altura_KeyDown"/>
+        <Label Content="Calculo de IMC" HorizontalAlignment="Center" Margin="0,38,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" Grid.Column="1"/>
+        <Label Content="Altura" HorizontalAlignment="Center" Margin="0,173,0,0" VerticalAlignment="Top" FontFamily="Arial Black" RenderTransformOrigin="1.201,0.652" Height="25" Width="58" FontSize="14" HorizontalContentAlignment="Center" Grid.Column="1"/>
+        <Button x:Name="bt_calcular" Content="Calcular Imc" HorizontalAlignment="Left" Margin="50,272,0,0" VerticalAlignment="Top" Height="37" Width="120" FontFamily="Arial Black" FontSize="14" Background="#FF7FEA7F" BorderBrush="#FF150E0E" Click="bt_calcular_click" Grid.Column="1"/>
+        <TextBox x:Name="Txt_imc" HorizontalAlignment="Center" Margin="0,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="#FF0E1015" Background="#FFCCBEBE" Height="28" Grid.Column="1"/>
+        <Label Content="Peso" HorizontalAlignment="Center" Margin="0,98,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Height="27" Width="58" FontSize="14" HorizontalContentAlignment="Center" Grid.Column="1"/>
+        <Button x:Name="bt_sair" Content="Sair" HorizontalAlignment="Center" Margin="0,413,0,0" VerticalAlignment="Top" Height="37" Width="120" FontFamily="Arial Black" FontSize="14" Background="#FFFC0404" BorderBrush="#FF150E0E" Click="bt_sair_imc_click" Grid.Column="1"/>
+        <Button x:Name="bt_limpar" Content="Limpar" HorizontalAlignment="Left" Margin="271,272,0,0" VerticalAlignment="Top" Height="37" Width="120" FontFamily="Arial Black" FontSize="14" Background="#FF7FEA7F" BorderBrush="#FF150E0E" Grid.Column="1" KeyDown="bt_limpar_KeyDown" Click="bt_limpar_Click"/>
+    </Grid>
+</Window>
